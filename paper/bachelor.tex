@@ -6,9 +6,16 @@
 \usepackage{polski}
 \usepackage[T1]{fontenc}
 
+% Możliwość korzystania z FloatBarrier
+\usepackage{placeins}
+
+% Możliwość wstawiania grafiki
+\usepackage{graphicx}
+
 \title{Rozpoznawanie chorób kukurydzy na podstawie obserwacji wizualnej z zastosowaniem 
 sieci konwolucyjnych.}
 \author{Jan Kowalski}
+\bibliographystyle{plain}
 
 \begin{document}
 \maketitle
@@ -36,10 +43,40 @@ sieci konwolucyjnych.}
 
 %==================================================================================================
 \section{Sieci neuronowe w klasyfikacji danych wizualnych}
+W poniższym rozdziale zaprezentowane zostaną podstawowe modele matematyczne sieci neuronowych
+oraz ich biologiczna inspiracja. Następnie przedstawiona zostanie architektura konwolucyjna wraz
+z opisem algoytmu uczącego dla sieci.
+
+%--------------------------------------------------------------------------------------------------
+\subsection{Biologiczna inspiracja}
+Sieci neuronowe oparte są na biologicznych mechanizmach przetwarzania danych. Podstawową jednostką
+w takim systemie jest komórka nerwowa \cite{Tadeusiewicz1994} nazywana też neuronem.
+Neuron przedewszystkim jest komórką. Tak jak dla każdej innej komórki podstawowym mechanizmem jest
+metabolizm, natomiast przejawia on dodatkową cechę która polega na możliwości przesyłania sygnału
+elektrycznego wzdłuż aksonu.
+\begin{figure}[htb] 
+	\label{fig:neuron}
+	\centering
+	\includegraphics[width=\textwidth]{figures/neuron}
+	\caption{Komórka nerwowa \tiny{źródło: www.fizjoterapeuty.pl}}
+\end{figure}
+
+\FloatBarrier
+%--------------------------------------------------------------------------------------------------
+\subsection{Model neuronu jako klasyfikator}
+
+%--------------------------------------------------------------------------------------------------
+\subsection{Uczenie sztucznych sieci neuronowych}
+
+%--------------------------------------------------------------------------------------------------
+\subsection{Konwolucyjne sieci neuronowe}
+
 
 %==================================================================================================
 \section{Architektura kontowlucyjna w detekcji chorób liścia kukurydzy}
 
+\nocite{*}
+\bibliography{bibliografia} 
 
 \end{document}
 
