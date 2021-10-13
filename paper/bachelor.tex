@@ -12,8 +12,8 @@
 % Możliwość wstawiania grafiki
 \usepackage{graphicx}
 
-\title{Rozpoznawanie chorób kukurydzy na podstawie obserwacji wizualnej z zastosowaniem 
-sieci konwolucyjnych.}
+\title{Rozpoznawanie chorób liścia kukurydzy na podstawie obserwacji wizualnej z zastosowaniem 
+sieci splotowych.}
 \author{Jan Kowalski}
 \bibliographystyle{plain}
 
@@ -29,9 +29,13 @@ sieci konwolucyjnych.}
 
 %--------------------------------------------------------------------------------------------------
 \subsection{Słowa kluczowe}
+Choroby kukurydzy, Sieci Splotowe, Sieci Neuronowe, Uczenie Maszynowe, Wizja Komputerowa
 
 %--------------------------------------------------------------------------------------------------
 \subsection{Teza główa}
+Sieci splotowe wyuczone na przygotowanym uprzednio zbiorze danych są w stanie identyfikować
+poprawnie choroby liścia kukurydzy w oparciu o obserwację wizualną z poprawnością na poziomie
+co najmniej 90\%.
 
 %--------------------------------------------------------------------------------------------------
 \subsection{Motywacja}
@@ -60,6 +64,8 @@ elektrycznego wzdłuż aksonu.
 	\includegraphics[width=\textwidth]{figures/neuron}
 	\caption{Komórka nerwowa \tiny{źródło: www.fizjoterapeuty.pl}}
 \end{figure}
+Jak pokazano na rysunku \ref{fig:neuron} w skład komórki nerwowej wchodzą dendryty które zbierają
+sygnały i akson który je przekazuje dalej.
 
 \FloatBarrier
 %--------------------------------------------------------------------------------------------------
